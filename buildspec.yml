@@ -1,0 +1,30 @@
+version: 0.2
+
+run-as: root
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo ===== NPM UPDATE =====
+      - npm i npm@latest -g
+      - echo ===== NPM UPDATE COMPLETE =====
+      - echo ===== YARN INSTALL =====
+      - npm install -g yarn
+      - echo ===== YARN INSTALL COMPLETE =====
+  pre_build:
+    commands:
+      - echo ===== INSTALL DEPENDENCIES =====
+      - yarn install
+      - echo ===== INSTALL DEPENDENCIES COMPLETE =====
+  build:
+    commands:
+      - echo ===== PROJECT BUILD =====
+      - yarn build
+      - echo ===== PROJECT BUILD COMPLETE =====
+  post_build:
+    commands:
+      - echo ===== PROJECT DEPLOY TO S3 =====
+      - yarn deploy
+      - echo ===== PROJECT DEPLOY TO S3 COMPLETE =====
