@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import BaseLayout from '@/layouts/Base';
+import 'normalize.css';
 
+import BaseLayout from '@/layouts/Base';
 import TimeLine from '@/pages/TimeLine';
 
 Vue.use(VueRouter);
