@@ -1,9 +1,9 @@
 <template>
   <div>
     <gnb/>
-    <section class="section">
+    <main>
       <router-view/>
-    </section>
+    </main>
   </div>
 </template>
 
@@ -18,9 +18,5 @@ export default {
 </script>
 
 <style scoped>
-
-.section {
-  margin-top: 77px;
-}
 
 </style>
