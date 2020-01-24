@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home';
 
 import BaseLayout from '@/layouts/Base';
 
@@ -12,10 +11,6 @@ const routes = [
     name: 'Base',
     component: BaseLayout,
     children: [
-      {
-        path: '',
-        name: Home,
-      },
     ],
   },
   {
