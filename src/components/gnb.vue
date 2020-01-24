@@ -41,6 +41,7 @@ export default {
     box-sizing: border-box;
     width: 100%;
     height: 77px;
+    background-color: white;
 
     border-bottom: 1px solid rgb(219, 219, 219);
   }
