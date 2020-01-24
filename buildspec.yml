@@ -26,6 +26,7 @@ phases:
   post_build:
     commands:
       - echo ===== PROJECT DEPLOY TO S3 =====
-      - yarn deploy
+      - yarn s3-sync
+      - yarn invalidate
       - echo ===== PROJECT DEPLOY TO S3 COMPLETE =====
 
