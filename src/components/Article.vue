@@ -27,7 +27,7 @@
       January 11
     </div>
     <div class="article__add-comment">
-      Add a Comment...
+      Add a Comment...!!! INVALIDATION!! ACTIVATED
     </div>
   </article>
 </template>
