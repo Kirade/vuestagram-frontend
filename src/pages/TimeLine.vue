@@ -50,8 +50,6 @@ export default {
   max-width: 618px;
   margin-right: 28px;
 
-  /* temp */
-  border: 1px solid rgb(219, 219, 219);
 
   @media (max-width: 1000px) {
     max-width: 600px;
