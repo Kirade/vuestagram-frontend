@@ -26,6 +26,6 @@ phases:
   post_build:
     commands:
       - echo ===== PROJECT DEPLOY TO S3 =====
-      - aws s3 sync ./dist $S3_BUCKET
+      - yarn deploy
       - echo ===== PROJECT DEPLOY TO S3 COMPLETE =====
 
